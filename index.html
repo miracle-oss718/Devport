@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miracle Njub — Frontend Architect & Conversion Designer</title>
+  <meta name="description" content="I build high-performance web experiences that convert visitors into qualified leads. 30+ leads in 24 hours. Frontend architecture, UI/UX, and conversion strategy.">
+  <meta name="keywords" content="frontend developer, conversion designer, web developer, UI/UX, CRO, landing pages, Miracle Njub">
+  <meta name="author" content="Miracle Njub">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Miracle Njub — Frontend Architect & Conversion Designer">
+  <meta property="og:description" content="Websites that don't just look beautiful. They make businesses money.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://miraclenjub.dev">
+  <meta property="og:image" content="https://miraclenjub.dev/hero-bg.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://miraclenjub.dev">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preload" as="image" href="hero-bg.png" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="Miracle Njub Home">
+    <img src="logo.png" alt="Miracle Njub Logo" class="logo-img">
+</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#testimonials" class="nav-link">Results</a>
+        <a href="contact.html" class="nav-cta">Let's Talk</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- =========================
+         HERO SECTION
+    ========================= -->
+    <section class="hero" id="home">
+      <div class="hero-background" aria-hidden="true">
+        <img src="hero-bg.png" alt="" loading="eager" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" data-animate="fade-up">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Available for all Projects</span>
+          </div>
+          <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+            Websites that don't just
+            <span>look beautiful.</span>
+            They make businesses money.
+          </h1>
+          <p class="hero-description" data-animate="fade-up" data-delay="200">
+            Fast, conversion-focused websites that help businesses build trust, attract customers and grow online.
+          </p>
+          <div class="hero-actions" data-animate="fade-up" data-delay="300">
+            <a href="contact.html" class="btn-primary">Start a Project</a>
+            <a href="work.html" class="btn-secondary">
+              View Portfolio
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="hero-trust" data-animate="fade-up" data-delay="400">
+            <span>Performance-first • Accessibility focused • SEO ready</span>
+          </div>
+          <div class="hero-stats" data-animate="fade-up" data-delay="400">
+            <div class="stat-card performance">
+              <div class="stat-number" data-count="100" data-suffix="%">0%</div>
+              <div class="stat-label">Performance</div>
+            </div>
+            <div class="stat-card conversion">
+              <div class="stat-number" data-count="32" data-suffix="%">0%</div>
+              <div class="stat-label">Conversion Lift</div>
+            </div>
+            <div class="stat-card projects">
+              <div class="stat-number" data-count="50" data-suffix="+">0+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+          </div>
+          <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+            <span class="scroll-text">S C R O L L</span>
+            <span class="scroll-line" aria-hidden="true">
+              <span class="scroll-dot"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================= -->
+    <section id="about" class="section-dark about-section" aria-labelledby="about-heading">
+      <div class="about-bg" aria-hidden="true">
+        <div class="about-glow about-glow-1"></div>
+        <div class="about-glow about-glow-2"></div>
+      </div>
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" data-animate="fade-up">
+            <div class="about-image-wrap">
+             <div class="about-image-placeholder">
+  <img src="miracle.jpg" alt="Portrait of Miracle Njub" class="about-image" loading="lazy" width="320" height="400">
+</div>
+              </div>
+              <div class="about-experience-badge">
+                <span class="about-exp-number">5+</span>
+                <span class="about-exp-text">Years of<br>Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content" data-animate="fade-up" data-delay="150">
+            <span class="section-label">About Me</span>
+            <h2 id="about-heading">I turn complex problems into <span class="text-gradient">simple, profitable</span> solutions.</h2>
+            <div class="about-body">
+              <p>I'm Miracle Njub, a frontend architect obsessed with one thing: <strong>making websites that actually work for your business.</strong></p>
+              <p>Not just pretty pixels. Not just trendy animations. I build digital experiences engineered to convert visitors into customers, leads into revenue, and browsers into buyers.</p>
+              <p>Over the past 5+ years, I've helped startups, agencies, and established brands transform their online presence. From luxury e-commerce platforms to high-converting landing pages, every project follows the same principle: <strong>design with purpose, code with precision, measure by results.</strong></p>
+            </div>
+            <div class="about-skills">
+              <h3>Core Expertise</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                  <span>Frontend Architecture</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-paint-brush" aria-hidden="true"></i></div>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                  <span>Conversion Strategy</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+                  <span>Performance Optimization</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-pen-fancy" aria-hidden="true"></i></div>
+                  <span>Copywriting & CRO</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-universal-access" aria-hidden="true"></i></div>
+                  <span>Accessibility (a11y)</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-cta">
+              <a href="contact.html" class="btn-primary">
+                Work With Me
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="work.html" class="btn-secondary">
+                See My Work
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Transition: Dark to Light -->
+    <div class="section-transition transition-dark-to-light"></div>
+
+    <!-- =========================
+         SERVICES SECTION
+    ========================= -->
+    <section id="services" class="section-light" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">What I Deliver</span>
+          <h2 id="services-heading">Services engineered for <span class="text-some">business outcomes</span></h2>
+          <p class="section-subtitle">Every line of code and every design decision serves one purpose: moving your metrics in the right direction.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card-3d" data-animate="fade-up" data-delay="100" tabindex="0">
+            <div class="service-card-inner">
+              <div class="service-icon-wrap">
+                <i class="fas fa-palette" aria-hidden="true"></i>
+              </div>
+              <h3>Conversion Design</h3>
+              <p>UI/UX decisions backed by behavioral psychology. Every button placement, color choice, and scroll trigger is designed to guide visitors toward action.</p>
+              <div class="service-meta">
+                <span class="meta-tag">A/B Testing</span>
+                <span class="meta-tag">CRO</span>
+                <span class="meta-tag">User Flow</span>
+              </div>
+            </div>
+          </article>
+          <article class="service-card-3d" data-animate="fade-up" data-delay="200" tabindex="0">
+            <div class="service-card-inner">
+              <div class="service-icon-wrap">
+                <i class="fas fa-mobile-screen" aria-hidden="true"></i>
+              </div>
+              <h3>Responsive Systems</h3>
+              <p>Mobile-first layouts that look exceptional on every device. From 320px phones to 4K displays, your site adapts flawlessly without breaking the design language.</p>
+              <div class="service-meta">
+                <span class="meta-tag">Mobile First</span>
+                <span class="meta-tag">Fluid Type</span>
+                <span class="meta-tag">Touch Optimized</span>
+              </div>
+            </div>
+          </article>
+          <article class="service-card-3d" data-animate="fade-up" data-delay="400" tabindex="0">
+            <div class="service-card-inner">
+              <div class="service-icon-wrap">
+                <i class="fas fa-rocket" aria-hidden="true"></i>
+              </div>
+              <h3>Performance Optimization</h3>
+              <p>Sub-second load times through code splitting, lazy loading, and asset optimization. Fast sites rank higher, convert better, and cost less to host.</p>
+              <div class="service-meta">
+                <span class="meta-tag">Core Web Vitals</span>
+                <span class="meta-tag">Lazy Loading</span>
+                <span class="meta-tag">CDN</span>
+              </div>
+            </div>
+          </article>
+          <article class="service-card-3d" data-animate="fade-up" data-delay="500" tabindex="0">
+            <div class="service-card-inner">
+              <div class="service-icon-wrap">
+                <i class="fas fa-pen-nib" aria-hidden="true"></i>
+              </div>
+              <h3>Copywriting & Strategy</h3>
+              <p>Words that sell. I write headlines that stop the scroll, body copy that builds trust, and CTAs that demand action. Because design without copy is just decoration.</p>
+              <div class="service-meta">
+                <span class="meta-tag">Headlines</span>
+                <span class="meta-tag">CTA Design</span>
+                <span class="meta-tag">Brand Voice</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Transition: Light to Dark -->
+    <div class="section-transition transition-light-to-dark"></div>
+
+    <!-- =========================
+         WORK SECTION
+    ========================= -->
+    <section id="work" class="section-dark work-section" aria-labelledby="work-heading">
+      <div class="work-background" aria-hidden="true">
+        <img src="work-bg.png" alt="" loading="lazy">
+        <div class="work-gradient"></div>
+        <div class="work-noise"></div>
+      </div>
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Selected Work</span>
+          <h2 id="work-heading">Projects that <span class="text-blue">moved the needle</span></h2>
+          <p class="section-subtitle">Real results for real businesses. Each project solved a specific problem and delivered measurable impact.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card-3d" data-animate="fade-up" data-delay="0" tabindex="0">
+            <div class="work-card-inner">
+              <div class="work-image">
+                <img src="jewelry.jpg" alt="MON Étoile luxury jewellery ecommerce website with elegant dark interface" loading="lazy">
+                <!-- TODO: replace href="#" with the live MON Étoile project link -->
+                <a href="https://etoile-six.vercel.app/" class="glass-view-btn" aria-label="View MON Étoile case study">
+                  <span>View Work</span>
+                  <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="work-content">
+                <div class="work-tags">
+                  <span class="work-tag">Luxury UI</span>
+                  <span class="work-tag">E-Commerce</span>
+                  <span class="work-tag">Responsive</span>
+                </div>
+                <h3>MON Étoile</h3>
+                <p>A luxury jewellery website designed to deliver a premium shopping experience. Features include an elegant dark interface, live currency conversion, a custom jewellery calculator, and refined interactions that reinforce an exclusive brand identity.</p>
+                <div class="work-metrics">
+                  <div class="work-metric">
+                    <i class="fas fa-gem" aria-hidden="true"></i>
+                    <span>Luxury UI</span>
+                  </div>
+                  <div class="work-metric">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                    <span>Multi-Currency</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="work-card-3d" data-animate="fade-up" data-delay="100" tabindex="0">
+            <div class="work-card-inner">
+              <div class="work-image">
+                <img src="real.jpg" alt="Luxury real estate homepage with modern dark interface and responsive design" loading="lazy">
+                <!-- TODO: replace href="#" with the live Real Estate project link -->
+                <a href="https://navitas-pi.vercel.app/" class="glass-view-btn" aria-label="View Luxury Real Estate Homepage case study">
+                  <span>View Work</span>
+                  <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="work-content">
+                <div class="work-tags">
+                  <span class="work-tag">Real Estate</span>
+                  <span class="work-tag">Luxury UI</span>
+                  <span class="work-tag">Responsive</span>
+                </div>
+                <h3>Luxury Real Estate Homepage</h3>
+                <p>A premium real estate homepage crafted with a sleek dark aesthetic, fully responsive layouts, and strategic content hierarchy. Every section is designed to elevate perceived property value while guiding visitors toward high-intent enquiries.</p>
+                <div class="work-metrics">
+                  <div class="work-metric">
+                    <i class="fas fa-building" aria-hidden="true"></i>
+                    <span>Luxury Design</span>
+                  </div>
+                  <div class="work-metric">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <span>Fully Responsive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="work-card-3d" data-animate="fade-up" data-delay="200" tabindex="0">
+            <div class="work-card-inner">
+              <div class="work-image">
+                <img src="jamb.jpg" alt="Study platform mobile app interface with clean UI and modern design" loading="lazy">
+                <!-- TODO: replace href="#" with the live Study Platform project link -->
+                <a href="https://prep-hub-jet.vercel.app/" class="glass-view-btn" aria-label="View Study Platform Experience case study">
+                  <span>View Work</span>
+                  <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="work-content">
+                <div class="work-tags">
+                  <span class="work-tag">Web App</span>
+                  <span class="work-tag">Dark Mode</span>
+                  <span class="work-tag">AI Chat</span>
+                </div>
+                <h3>Study Platform Experience</h3>
+                <p>A study platform with smooth UI, easy navigation, AI chat integration, simulator experiences, and light/dark theme toggle. Designed to help students navigate exams properly with an engaging, retention-focused interface.</p>
+                <div class="work-metrics">
+                  <div class="work-metric">
+                    <i class="fas fa-robot" aria-hidden="true"></i>
+                    <span>AI Integrated</span>
+                  </div>
+                  <div class="work-metric">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <span>Theme Toggle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="work-cta-bottom" data-animate="fade-up">
+          <a href="work.html" class="btn-primary btn-large">
+            <span>View All Projects</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Transition: Dark to Light -->
+    <div class="section-transition transition-dark-to-light"></div>
+
+    <!-- =========================
+         TESTIMONIALS SECTION
+    ========================= -->
+    <section id="testimonials" class="section-light" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Client Results</span>
+          <h2 id="testimonials-heading">Don't just take my word for <span class="text-some">it</span></h2>
+          <p class="section-subtitle">Here's what founders and business owners say after working together.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card-3d" data-animate="fade-up" data-delay="0">
+            <div class="testimonial-inner">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote class="testimonial-quote">
+                "Originally, I gave this guy the benefit of the doubt, but what he delivered was far beyond expectation. <strong>30+ new leads in 24hrs</strong>. The design was sleek, the copy was sharp, and everything was 10/10."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="bless.png" alt="Blessed O.E portrait" loading="lazy" width="48" height="48">
+                </div>
+                <div class="author-info">
+                  <h4>Blessed O.E</h4>
+                  <p>Owner | Dplug Gadgets</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card-3d" data-animate="fade-up" data-delay="100">
+            <div class="testimonial-inner">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote class="testimonial-quote">
+                "I don't normally do this website stuff, but when I gave it a go, my expression was 🤯. I especially love the fact that he kept to the timeline on the contract and gave me exactly what I wanted 🥰."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="sarah.png" alt="Sarah A.O portrait" loading="lazy" width="48" height="48">
+                </div>
+                <div class="author-info">
+                  <h4>Sarah A.O</h4>
+                  <p>Founder | MON Étoile</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Transition: Light to Dark -->
+    <div class="section-transition transition-light-to-dark"></div>
+
+    <!-- =========================
+         CTA SECTION
+    ========================= -->
+    <section class="section-dark cta-section" aria-labelledby="cta-heading">
+      <div class="cta-bg" aria-hidden="true">
+        <div class="cta-glow cta-glow-1"></div>
+        <div class="cta-glow cta-glow-2"></div>
+      </div>
+      <div class="container">
+        <div class="cta-content" data-animate="fade-up">
+          <h2 id="cta-heading">Ready to turn your vision into <span class="text-gradient">revenue</span>?</h2>
+          <p class="cta-subtitle">Let's discuss how we can improve your product's performance, accessibility, and conversion rates. No obligation: just honest advice and a clear roadmap.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary btn-large">
+              <span>Book a Free Strategy Call</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="work.html" class="btn-secondary btn-large">
+              <span>See More Work</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="cta-trust">
+            <div class="trust-item">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>100% Satisfaction Guarantee</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Response within 24 hours</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Fixed pricing, no surprises</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+  <footer class="footer">
+    <div class="footer-background" aria-hidden="true">
+      <img src="work-bg.png" alt="" loading="lazy">
+    </div>
+    <div class="footer-overlay" aria-hidden="true"></div>
+    <div class="footer-noise" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+<a href="index.html" class="footer-logo" aria-label="Miracle Njub Home">
+    <img src="logo.png" alt="Miracle Njub Logo" class="footer-logo-img">
+</a>
+          <p>Frontend architect building high-performance web experiences that convert.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/mirae.frontend" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/2348021233816?text=Hi%20Miracle!%20I%20just%20checked%20out%20your%20portfolio%20and%20I'd%20love%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/njubemere-miracle-miracle-a193003b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://www.threads.com/@mirae.frontend" target="_blank" rel="noopener noreferrer" aria-label="Threads"><i class="fab fa-threads" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Frontend Dev</a></li>
+            <li><a href="index.html#services">UI/UX Design</a></li>
+            <li><a href="index.html#services">Copywriting</a></li>
+            <li><a href="index.html#services">CRO</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:okerewanjubemeremiracle@gmail.com">Email Me</a></li>
+            <li><a href="contact.html">Start a Project</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Miracle Njub. All rights reserved.</p>
+        <p class="footer-craft">Crafted with precision, performance, and accessibility in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
