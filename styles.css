@@ -214,7 +214,10 @@ body.menu-open .mobile-menu-overlay { opacity: 1; visibility: visible; }
 .hero-title span { display: block; background: linear-gradient(90deg, #ffffff, #d0d0d0); -webkit-background-clip: text; color: transparent; }
 .hero-description { max-width: 620px; color: #b8b8b8; font-size: 1.15rem; line-height: 1.9; margin-bottom: 3rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
-.hero-trust { display: flex; align-items: center; gap: 0.8rem; color: #999; margin-bottom: 3rem; font-size: 0.92rem; }
+
+/* FIX: allow the trust line to wrap instead of overflowing on
+   narrow screens if a second badge / longer copy is added later. */
+.hero-trust { display: flex; align-items: center; gap: 0.8rem; row-gap: 0.4rem; flex-wrap: wrap; color: #999; margin-bottom: 3rem; font-size: 0.92rem; }
 
 .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(90px, 1fr)); gap: 0.8rem; width: 100%; max-width: 620px; }
 .stat-card { position: relative; padding: 1rem 0.8rem; min-height: 110px; display: flex; flex-direction: column; justify-content: center; border-radius: 20px; background: rgba(255,255,255,0.045); border: 1px solid rgba(255,255,255,0.08); overflow: hidden; backdrop-filter: blur(16px); transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease; }
@@ -346,7 +349,10 @@ body.menu-open .mobile-menu-overlay { opacity: 1; visibility: visible; }
 .work-tag { background: rgba(255,255,255,0.05); padding: 0.3rem 0.75rem; border-radius: var(--radius-full); font-size: 0.75rem; color: var(--color-gray-400); border: 1px solid rgba(255,255,255,0.06); }
 .work-content h3 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--color-white); margin-bottom: var(--space-sm); }
 .work-content > p { color: var(--color-gray-400); font-size: 0.95rem; line-height: 1.7; margin-bottom: var(--space-md); }
-.work-metrics { display: flex; gap: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid rgba(255,255,255,0.06); }
+
+/* FIX: this row broke on mobile before (same overflow bug as
+   .project-stats below) — wrap it so it can never happen again. */
+.work-metrics { display: flex; flex-wrap: wrap; row-gap: 0.5rem; gap: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid rgba(255,255,255,0.06); }
 .work-metric { display: flex; align-items: center; gap: 0.5rem; color: var(--color-gray-400); font-size: 0.85rem; }
 .work-metric i { color: var(--color-white); }
 .work-cta-bottom { text-align: center; padding-bottom: var(--space-3xl); margin-top: 5rem; }
@@ -394,7 +400,7 @@ body.menu-open .mobile-menu-overlay { opacity: 1; visibility: visible; }
 .footer .container { position: relative; z-index: 2; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); margin-bottom: 4rem; }
 .footer-brand p { color: rgba(255,255,255,0.82); font-size: 0.95rem; line-height: 1.8; max-width: 340px; }
-.footer-social { display: flex; gap: 0.9rem; margin-top: 1.5rem; }
+.footer-social { display: flex; gap: 0.9rem; margin-top: 1.5rem; flex-wrap: wrap; }
 .footer-social a { width: 44px; height: 44px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(18px); transition: 0.35s ease; }
 .footer-social a:hover { background: #fff; color: #000; transform: translateY(-4px); }
 .footer-links h4 { color: #fff; margin-bottom: 1.2rem; letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.8rem; }
@@ -455,10 +461,20 @@ body.menu-open .mobile-menu-overlay { opacity: 1; visibility: visible; }
 .project-body p:last-child { margin-bottom: 0; }
 .project-meta { display: flex; gap: 0.5rem; margin-bottom: var(--space-md); flex-wrap: wrap; }
 .project-tag { background: var(--color-gray-100); padding: 0.3rem 0.75rem; border-radius: var(--radius-full); font-size: 0.8rem; color: var(--color-gray-600); font-weight: 500; }
-.project-stats { display: flex; gap: var(--space-xl); margin: var(--space-xl) 0; padding: var(--space-md) 0; border-top: 1px solid var(--color-gray-200); border-bottom: 1px solid var(--color-gray-200); }
+
+/* FIX: this was the row that broke on your phone screenshot —
+   3 stats + fixed gaps with no wrap forced the 3rd item off-screen.
+   Now it wraps, and on very narrow screens locks to a clean 2-up grid. */
+.project-stats { display: flex; flex-wrap: wrap; gap: var(--space-lg) var(--space-xl); margin: var(--space-xl) 0; padding: var(--space-md) 0; border-top: 1px solid var(--color-gray-200); border-bottom: 1px solid var(--color-gray-200); }
 .p-stat { text-align: center; }
 .p-stat-value { display: block; font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: var(--color-black); }
 .p-stat-label { font-size: 0.8rem; color: var(--color-gray-500); }
+
+@media (max-width: 480px) {
+  .project-stats { gap: var(--space-md) var(--space-lg); }
+  .p-stat { flex: 1 1 calc(50% - var(--space-lg)); min-width: 110px; }
+}
+
 .project-tech { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
 .tech-label { font-size: 0.85rem; font-weight: 600; color: var(--color-gray-600); }
 .tech-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
@@ -774,4 +790,4 @@ width: 100%; border: 1px solid var(--color-gray-200); border-radius: var(--radiu
 
 .footer-logo:hover .footer-logo-img {
     transform: scale(1.08);
-                                                                              }
+}
